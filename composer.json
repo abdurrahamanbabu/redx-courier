@@ -1,0 +1,31 @@
+{
+    "name": "abdur-rahaman/redx-courier",
+    "description": "Redx Shipping method courier services",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AbdurRahaman\\RedxCourier\\": "src/"
+        },
+        "files":[
+            "src/Helpers/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Abdur Rahaman",
+            "email": "abdur.babu84@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : "^8.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AbdurRahaman\\RedxCourier\\RedxServiceProvider"
+            ]
+        }
+    }
+}
