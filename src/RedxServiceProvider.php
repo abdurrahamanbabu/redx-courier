@@ -12,7 +12,7 @@ class RedxServiceProvider extends ServiceProvider{
             'redx'
         );
 
-        $this->app->bind('redx-courier',function($app){
+        $this->app->singleton('redx-courier',function($app){
             return new \AbdurRahaman\RedxCourier\Redx();
         });
     }
